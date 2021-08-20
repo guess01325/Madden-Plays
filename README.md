@@ -29,34 +29,34 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 {
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
-            "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "id": "rec6e9pgryDN8vHQs",
+            "fields": {},
+            "createdTime": "2021-08-20T19:43:48.000Z"
         },
         {
-            "id": "rec3oYZ5Tp0AIDsKe",
-            "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "id": "recGjIowXQBMzBQAD",
+            "fields": {},
+            "createdTime": "2021-08-20T19:39:12.000Z"
         },
         {
-            "id": "recA34tOaoE1IVeC1",
+            "id": "recMoPBHoc8m1m8vO",
             "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
+                "formation": "Single Back",
+                "play": "PA Verts",
+                "team": "Cowboys"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-08-20T19:39:12.000Z"
+        },
+        {
+            "id": "reccLE7irhuo4vMoI",
+            "fields": {
+                "formation": "Single Back",
+                "play": "HB Stretch",
+                "team": "Packers"
+            },
+            "createdTime": "2021-08-20T19:39:12.000Z"
         }
-    ],
-    "offset": "recA34tOaoE1IVeC1"
+    ]
 }
 ```
 
