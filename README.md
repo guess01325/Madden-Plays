@@ -99,6 +99,7 @@ I plan to spend 3 hours on each component and I plan to code for 8 hours a day i
 | code axios post/delete | H | 3hrs| 4hrs| 3hrs|
 | make plays component| 3hrs| 3hrs| 3hrs|
 
+
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## SWOT Analysis
