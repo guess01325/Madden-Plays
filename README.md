@@ -20,6 +20,9 @@ https://res.cloudinary.com/otisg/image/upload/v1629490830/maddenwireframe2_wlm7l
 
 ## API and Data Sample
 
+https://api.airtable.com/v0/appzTRr5Ju0pMpe1m/plays
+
+
 Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
 ```json
