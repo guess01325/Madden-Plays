@@ -80,7 +80,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 - Make css look much nicer
 - I will add links to plays on youtube
 - I will add all team logos to make fully functionally 
-- I will add more formations in data for plays
+- I will add more formations and plays in api
 
 ## Project Schedule
 
