@@ -13,7 +13,7 @@ Shows best and effective John Madden Football plays.
 
 ## Wireframes
 
-![alt text] (https://res.cloudinary.com/otisg/image/upload/v1629490830/maddenwireframe2_wlm7lq.png)
+![alt text](https://res.cloudinary.com/otisg/image/upload/v1629490830/maddenwireframe2_wlm7lq.png)   
 
 ## Component Hierarchy
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1629490780/hierarchy_hqh5sr.png) 
