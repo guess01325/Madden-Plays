@@ -108,7 +108,7 @@ I plan to spend 3 hours on each component and I plan to code for 8 hours a day i
 | Code plays component | H | 3hrs| 4hrs | 3hrs|
 | Code form component | H | 3hrs| 4hrs | 3hrs|
 | Code axios post/delete | H | 3hrs| 4hrs| 3hrs|
-| Cake plays component| 3hrs| 3hrs| 3hrs|
+| Make component with plays| 3hrs| 3hrs| 3hrs|
 | Cake buttons| 3hrs| 3hrs| 3hrs|
 
 
