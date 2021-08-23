@@ -13,10 +13,10 @@ Shows best and effective John Madden Football plays.
 
 ## Wireframes
 
-https://res.cloudinary.com/otisg/image/upload/v1629490830/maddenwireframe2_wlm7lq.png
+![alt text] https://res.cloudinary.com/otisg/image/upload/v1629490830/maddenwireframe2_wlm7lq.png
 
 ## Component Hierarchy
-[this](https://res.cloudinary.com/otisg/image/upload/v1629490780/hierarchy_hqh5sr.png) as an example.
+![alt text](https://res.cloudinary.com/otisg/image/upload/v1629490780/hierarchy_hqh5sr.png) 
 
 ## API and Data Sample
 
@@ -59,34 +59,42 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
     ]
 }
 ```
-
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- code app component
-- code nav component
-- code plays component
-- code forms component
-- code axios post
-- make plays compenent
-- code access delete
-- make nfl images component
-- make team logos compnent
-- 
+- I will make a main component to hold the app together in react
+- I will create a nav bar to go to all pages
+- I will create a component with all the plays
+- I will create a form to edit plays
+- I will make a request for date, to post plays and get them from data
+- I will create a page with plays
+- I will make a button for delete and make it functional
+- I will make a component with my madden logo and the nfl logo
+
+ 
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Input all 32 teams with more plays
+- Make css look much nicer
+- I will add links to plays on youtube
+- I will add all team logos to make fully functionally 
+- I will add more formations in data for plays
 
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
+
+|  Day | Deliverable | Status
+|---|---| ---|
+|Aug 19| Prompt / Wireframes / Priority Matrix / Timeframes|
+|Aug 20| Project Approval |
+|Aug 23| Core Application Structure (HTML, CSS, etc.) 
+|Aug 24| Pseudocode / actual code | Incomplete
+|Aug 25| Initial Clickable Model  | Incomplete
+|Aug 26| MVP | Incomplete
+|Aug 27| Presentations | Incomplete
 
 
 ## Timeframes
@@ -101,16 +109,20 @@ I plan to spend 3 hours on each component and I plan to code for 8 hours a day i
 | code form component | H | 3hrs| 4hrs | 3hrs|
 | code axios post/delete | H | 3hrs| 4hrs| 3hrs|
 | make plays component| 3hrs| 3hrs| 3hrs|
+| make buttons| 3hrs| 3hrs| 3hrs|
 
 
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Total | H | 21 hrs| 26 hrs | 21 hrs |
 
 ## SWOT Analysis
 
 ### Strengths:
-
+I can code pretty well and understand logic 
 ### Weaknesses:
-
+probably would be post mvp, and always sruggle with axios calls for some reason and getting in the death of data types.
 ### Opportunities:
-
+My opportunity is that I will be able to learn more about all this stuff and have a complete project to show future employers. 
 ### Threats:
+Threat I have is time management, I get caught up in tyring to uderstand to deep instead on working on priority, but I am getting better at that. 
+### Results
+I will stay on schedule and and push myself to be as creative as I can and push my limits during mvp. 
