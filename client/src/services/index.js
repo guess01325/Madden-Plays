@@ -1,4 +1,4 @@
-export const baseURL = "https://api.airtable.com/v0/appzTRr5Ju0pMpe1m/plays"
+export const baseURL =`https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_APP}/plays`
 
 export const config = { 
     headers: {
