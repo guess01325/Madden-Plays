@@ -1,73 +1,40 @@
-import axios from 'axios'
-import React, { useState, useEffect } from "react"
+import axios from "axios";
+import React, { useState, useEffect, Fragment } from "react";
 import { baseURL, config } from "../services";
 
 
+function Plays(props) {
+  // const [plays, setPlays] = useState([]);
+  // const [toggleFetch, setToggleFetch] = useState(false)
 
 
-function Plays(props){
- 
-  
-    const [ plays, setPlays ] = useState([])
-    const [ formation, setFormation] = useState("")
-    const [ team, setTeam ] = useState ("")
-    const [ play, setPlay ] = useState ("")
-    const [ type, setType ] = useState ("")
+  return (
+    <div>
+      {props.plays.map((play) => (
+      <ul>
+        <li>{play.fields.team}</li>
+        <li>{play.fields.play}</li>
+        <li>{play.fields.formation}</li>
+        <li>{play.fields.type}</li>
+      </ul>
+        ))}
+    <div><button>Delete</button></div>
+    <div><button>Delete</button></div>
+    <div><button>Delete</button></div>
+    <div><button>Delete</button></div>
+    <img src= "https://res.cloudinary.com/otisg/image/upload/v1629913944/raiders_ecewhz.jpg" alt="Raiders"/>
+    <img src="https://res.cloudinary.com/otisg/image/upload/v1629913935/Packers_uhq5c8.png" alt="Packers"/>
+    <img src= "https://res.cloudinary.com/otisg/image/upload/v1629913901/Cowboys_tugayu.png" alt="Cowboys"/>
+    <img src="https://res.cloudinary.com/otisg/image/upload/v1629913973/cheifs_btgjvq.png" alt="Cheifs"/>
     
-    useEffect(() => {
-      const getPlays = async () =>{
-        const resp = await axios.get(baseURL, config)
-        setPlays(resp.data.records)
-        console.log(resp.data.records)
-        // setTeam(resp.data.records.fields)
-        // setFormation(resp.data.records.fields.formation)
-        // setPlay(resp.data.records.fields.play)
-        // setType(resp.data.records.fields.type)
         
         
-  
-  
         
-      }
-      
-      getPlays()
-    }, []);
+          
+    </div>
 
-
-    return (
-      
-
-<div>
-
-  {plays.map((play, index) =>(
-    <h1>{play.fields.name}</h1>
-     
-  ))}
-</div>
-
-
-
-
-    )
-
-
-  
-     
-   
-      
-
-
-
-                
-                
-                
-              
-            
-    }
-
+        
+        
+  )
+}
 export default Plays;
-       
-
-
-
-
