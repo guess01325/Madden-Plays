@@ -1,6 +1,20 @@
 .nfl{
   width: 200px;
-  height: 200px;
+  height: 300px;
+}
+.madden{
+  width: 300px;
+  height: 170px;
+  
+}
+
+.input{
+  
+}
+
+.form{
+  position: relative;
+  left: 700px;
 }
 
 

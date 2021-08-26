@@ -7,6 +7,7 @@ import Plays from "./components/Plays";
 import Nav from "./components/Nav";
 import Images from "./components/Images";
 import Form from "./components/Form"
+import Teams from "./components/Teams"
 
 function App() {
   const [plays, setPlays] = useState([]);
@@ -38,13 +39,14 @@ function App() {
       </Route>
 
       <Route path="/form">
-        <Form setToggleFetch={setToggleFetch}/>
+        <Form setToggleFetch={setToggleFetch} toggleFetch={toggleFetch}/>
         <Images/>
       </Route>
 
 
       <Route path="/plays">
-      <Plays plays = {plays} />
+      <Plays plays = {plays} setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
+      <Teams/>
       <Images/>
       </Route>
 
