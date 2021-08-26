@@ -4,31 +4,34 @@ import { baseURL, config } from "../services";
 
 
 function Plays(props) {
+
 const deletePlays = async () =>{
-  await axios.delete(`${baseURL, props.play._id, config}`
+  await axios.delete( `${baseURL, props.plays._id, config}`
   );
   props.setToggleFetch((prevState) => !prevState);
-
 }
+deletePlays()
   return (
-    <div >
+    <div>
       {props.plays.map((play) => (
-      <ul>
-        <li>{play.fields.team}</li>
-        <li>{play.fields.play}</li>
-        <li>{play.fields.formation}</li>
-        <li>{play.fields.type}</li>
-      </ul>
+      
+      <div key={play._id}>
+
+        <h4>{play.fields.team}</h4>
+        <h4>{play.fields.play}</h4>
+        <h4>{play.fields.formation}</h4>
+        <h4>{play.fields.type}</h4>
+        <button onClick={deletePlays}>Delete</button>
+      </div>
+      
         ))}
-    <div><button>Delete</button></div>
-    <div><button>Delete</button></div>
-    <div><button>Delete</button></div>
-    <div><button>Delete</button></div>
+    </div>
+
+    
     
         
         
           
-    </div>
 
         
         
