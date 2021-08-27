@@ -1,0 +1,11 @@
+
+.plays-container {
+    border: red solid;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 1200px;
+    position: absolute;
+    left: 20px;
+}

@@ -1,0 +1,26 @@
+.logos-container {
+    display: flex;
+    width: 400px;
+    height: 800px;
+    position: absolute;
+    right: 250px;
+    flex-direction: column;
+    top: 80px;
+}
+
+
+
+.nfl{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    
+    
+  }
+  .madden{
+    width: 100%;
+    width: 100%;
+    
+    
+  }
+  

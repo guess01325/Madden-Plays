@@ -1,0 +1,71 @@
+/* .play-container {
+    border: purple solid;
+    display: grid;
+    grid-template-areas:
+        "I I T T"
+        "I I P P"
+        "B B F F"
+        "B B T T";
+}
+
+#play-image {
+    grid-area: I;
+
+}
+
+#play-button {
+    grid-area: B;
+}
+
+#play-team {
+    grid-area: T;
+}
+
+#play-play {
+    grid-area: P;
+}
+
+#play-formation {
+    grid-area: F;
+}
+
+#play-type {
+    grid-area: T;
+} */
+
+
+.play-container  {
+    border: purple solid 4px;
+    margin: 20px;
+    padding: 20px;
+
+    display: flex;
+    width: 500px;
+    height: 400px;
+    justify-content: space-around;
+    
+    
+    
+
+    
+
+}
+
+.play-details {
+    width: 500px;
+
+
+}
+
+.teamImage-container {
+    width: 400px;
+    margin: 10px;
+
+}
+
+
+
+.teamImage {
+width: 300px;
+height: 220px;
+}

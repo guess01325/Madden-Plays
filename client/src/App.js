@@ -1,15 +1,20 @@
 import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Link, Route } from "react-router-dom";
+import { Link, Route, useHistory } from "react-router-dom";
 import { baseURL, config } from "./services/index.js";
 import Plays from "./components/Plays";
 import Nav from "./components/Nav";
 import Images from "./components/Images";
 import Form from "./components/Form"
-import Teams from "./components/Teams"
+import Play from "./components/Play"
+
+
+
 
 function App() {
+  
+  const history = useHistory();
   const [plays, setPlays] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false)
   
@@ -26,7 +31,7 @@ function App() {
   
   
    return (
-    <div className="header">
+    <div className="app">
       <header>
         <Nav />
       </header>
@@ -34,8 +39,11 @@ function App() {
       <Route path="/" exact>
         <h2>Own the Gridiron!</h2>
         <p>Popular Madden plays liver here! Add your play to the list if you think you got what it takes to own the Gridiron!</p>
-        <button>Start Now</button>
+        <button onClick={() => history.push('/plays')}>
+      Click me
+    </button>
         <Images/>
+        
       </Route>
 
       <Route path="/form">
@@ -46,8 +54,9 @@ function App() {
 
       <Route path="/plays">
       <Plays plays = {plays} setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
-      <Teams/>
       <Images/>
+      
+      
       </Route>
 
       
