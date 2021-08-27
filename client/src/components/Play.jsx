@@ -19,7 +19,7 @@ function Play(props) {
           <img className="teamImage" src={props.play.fields.URL}></img>
         </div>
         <div id="play-button">
-          <button onClick={handleDelete}>Delete</button>
+          <button className="delete-button" onClick={handleDelete}>Delete</button>
         </div>
       </div>
       <div className="play-details">

@@ -53,7 +53,7 @@ function Form(props) {
         value={type}
         onChange={(e) => setType(e.target.value)}
       />
-      <button type="Submit">Submit</button>
+      <button className="submit-button" type="Submit">Submit</button>
     </form>
   );
 }

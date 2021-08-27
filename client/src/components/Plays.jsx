@@ -10,7 +10,7 @@ function Plays(props) {
   return (
     <div className="plays-container">
       {props.plays.map((play) => (
-       <Play  play={play} />
+       <Play setToggleFetch={props.setToggleFetch}   play={play} />
       ))}
     </div>
   );

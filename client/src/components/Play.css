@@ -1,38 +1,3 @@
-/* .play-container {
-    border: purple solid;
-    display: grid;
-    grid-template-areas:
-        "I I T T"
-        "I I P P"
-        "B B F F"
-        "B B T T";
-}
-
-#play-image {
-    grid-area: I;
-
-}
-
-#play-button {
-    grid-area: B;
-}
-
-#play-team {
-    grid-area: T;
-}
-
-#play-play {
-    grid-area: P;
-}
-
-#play-formation {
-    grid-area: F;
-}
-
-#play-type {
-    grid-area: T;
-} */
-
 
 .play-container  {
     border: #DC143C solid 4px;
@@ -55,7 +20,10 @@
     
 
 }
-
+.delete-button {
+    width: 100px;
+    height: 50px;
+}
 .play-details {
     width: 500px;
     color: white;
