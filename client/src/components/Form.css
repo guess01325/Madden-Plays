@@ -1,0 +1,44 @@
+.form-container{
+    position: absolute;
+    right: 1000px;
+    border: red solid;
+    width: 600px;
+    height: 525px;
+    top: 200px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630037566/maden-22-cover_osuu9f.jpg"); */
+    
+  }
+
+
+  .form-input{
+      color: blue;
+      font-size: x-large;
+      
+  }
+
+
+  @media only screen and (max-width: 450px) {
+    .form-container{
+        position: absolute;
+        right: 850px;
+        border: red solid;
+        width: 1000px;
+        height: 1200px;
+        top: 1300px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .form-input{
+            color: blue;
+            font-size: 55PX;
+            
+        }
+      
+    }
+

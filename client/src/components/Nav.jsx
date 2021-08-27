@@ -1,4 +1,6 @@
 import {Link, Route} from "react-router-dom"
+import "./Nav.css"
+
 
 
 
@@ -7,12 +9,19 @@ import {Link, Route} from "react-router-dom"
 function Nav(){
 
     return(
-        <Route>
+       
 
-            <Link to="/">Home</Link>
-            <Link to="/plays">Plays</Link>
-            <Link to="/form">Suggest Plays</Link>
+        <Route>
+            
+            <div className="nav">
+
+            <Link className="link-color" to="/">Home</Link>
+            <Link className="link-color"  to="/plays" >Plays</Link>
+            <Link className="link-color" to="/form">Suggest Plays</Link>
+            
+            </div>
         </Route>
+        
     )
 
 }

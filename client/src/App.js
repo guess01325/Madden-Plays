@@ -36,12 +36,15 @@ function App() {
         <Nav />
       </header>
 
-      <Route path="/" exact>
-        <h2>Own the Gridiron!</h2>
-        <p>Popular Madden plays liver here! Add your play to the list if you think you got what it takes to own the Gridiron!</p>
-        <button onClick={() => history.push('/plays')}>
-      Click me
+      <Route  path="/" exact>
+        <div className="main">
+        <h2 id="title">Own the Gridiron!</h2>
+        <p id="title-description">Popular Madden plays liver here! Add your play to the list if you think you got what it takes to own the Gridiron!</p>
+        <button id="start-button" onClick={() => history.push('/form')}>
+      Start Here
     </button>
+          
+        </div>
         <Images/>
         
       </Route>

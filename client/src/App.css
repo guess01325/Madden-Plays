@@ -2,15 +2,108 @@
 
 
 
-.form{
+
+
+
+
+.app {
+  
+ height: 3000px;
+ width: 1980px;
+ position: relative;
+ 
+margin-right: auto;
+margin-left: auto;
+background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584/chiefs-madden-image_nqzont.jpg") ;
+
+ 
+}
+
+.main{
+  
+  color: #DC143C;
   position: relative;
-  left: 700px;
+  top: 200px;
+  left: 200px;
+  font-size: xx-large;
+  word-wrap: break-word;
+  width: 600px;
+}
+
+#title {
+  font-size: 100px;
+}
+
+#title-description{
+  font-size: 50px;
+  color: blue;
+}
+
+#start-button {
+  background-color: #DC143C;
+  font-size: 40px;
 }
 
 
 
-.app{
-  border: red solid ;
-}
+
+  @media only screen and (max-width: 450px) {
+    .app {
+  
+      height: 3000px;
+      width: 1980px;
+      position: relative;
+      
+     margin-right: auto;
+     margin-left: auto;
+     background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584/chiefs-madden-image_nqzont.jpg") ;
+     
+      
+     }
+     .nav {
+      display: flex;
+      justify-content: space-between;
+      margin-right: auto;
+      margin: left;
+     
+      justify-content: space-between;
+      width: 300px;
+      font-size: x-large;
+      position: absolute;
+      left: 600px;
+    }
+    .main{
+  
+      color: #DC143C;
+      position: relative;
+      top: 1200px;
+      left: 315px;
+      font-size: xx-large;
+      word-wrap: break-word;
+      width: 800px;
+      height: 700px;
+      font-size: 200px;
+    }
+    #title {
+      font-size: 125px;
+    }
+    #title-description{
+      font-size: 75px;
+      color: blue;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      margin-right: auto;
+      margin: left;
+      font-size: xx-large;
+     
+      justify-content: space-between;
+      width: 300px;
+      font-size: x-large;
+      position: absolute;
+      left: 600px;
+    }
+  }
 
 
