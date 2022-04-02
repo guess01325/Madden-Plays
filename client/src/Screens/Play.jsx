@@ -1,7 +1,7 @@
 import axios from "axios";
 import { baseURL, config } from "../services";
 import "../Assets/Play.css";
-import {useEffect} from "react"
+
 
 function Play(props) {
   
@@ -16,7 +16,7 @@ function Play(props) {
     <div className="play-container" key={props.play.id}>
       <div className="teamImage-container">
         <div id="play-image">
-          <img className="teamImage" src={props.play.fields.URL}></img>
+          <img className="teamImage" src={props.play.fields.URL} alt = 'play'></img>
         </div>
         <div id="play-button">
           <button className="delete-button" onClick={handleDelete}>Delete</button>

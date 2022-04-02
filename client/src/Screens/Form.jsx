@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useState } from "react";
+
 import { baseURL, config } from "../services";
 import axios from "axios";
 import "../Assets/Form.css";
@@ -9,7 +9,7 @@ function Form(props) {
   const [team, setTeam] = useState("");
   const [play, setPlay] = useState("");
   const [type, setType] = useState("");
-  const params = useParams();
+ 
 
   const handleSubmit = async (event) => {
     event.preventDefault();

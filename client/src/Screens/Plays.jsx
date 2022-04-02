@@ -1,7 +1,7 @@
 
 import "../Assets/Plays.css"
 import Play from "../Screens/Play"
-import {useEffect} from "react"
+
 
 
 function Plays(props) {
