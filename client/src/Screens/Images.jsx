@@ -1,4 +1,4 @@
-import "./Images.css";
+import "../Assets/Images.css";
 
 function Images(){
 

@@ -2,12 +2,13 @@ import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, Route, useHistory } from "react-router-dom";
-import { baseURL, config } from "./services/index.js";
-import Plays from "./components/Plays";
-import Nav from "./components/Nav";
-import Images from "./components/Images";
-import Form from "./components/Form"
-import Play from "./components/Play"
+import { baseURL, config } from "./services"
+import Plays from "./Screens/Plays";
+import Nav from "./Components/Nav";
+import Images from "./Screens/Images";
+import Form from "./Screens/Form"
+import Play from "./Screens/Play"
+import { render } from "@testing-library/react";
 
 
 
@@ -17,21 +18,20 @@ function App() {
   const history = useHistory();
   const [plays, setPlays] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false)
-  
-  
-  useEffect(() => {
-    const getPlays = async () => {
-      const resp = await axios.get(baseURL, config);
-      console.log(resp.data.records);
-      setPlays(resp.data.records);
-    };
 
-    getPlays();
-  }, [toggleFetch] );
-  
-  
-   return (
-    <div className="app">
+  useEffect(() => {
+      const getPlays = async () => {
+        const resp = await axios.get(baseURL, config);
+        console.log(resp.data.records);
+        setPlays(resp.data.records);
+      };
+      
+      getPlays();
+    }, [toggleFetch] );
+    
+    
+    return (
+      <div className="app">
       <header>
         <Nav />
       </header>
@@ -65,6 +65,7 @@ function App() {
       
     </div>
   );
+
 }
 
 export default App;

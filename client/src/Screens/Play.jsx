@@ -1,6 +1,6 @@
 import axios from "axios";
 import { baseURL, config } from "../services";
-import "./Play.css";
+import "../Assets/Play.css";
 import {useEffect} from "react"
 
 function Play(props) {

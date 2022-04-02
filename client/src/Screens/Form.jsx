@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { baseURL, config } from "../services";
 import axios from "axios";
-import "./Form.css";
+import "../Assets/Form.css";
 
 function Form(props) {
   const [formation, setFormation] = useState("");

@@ -7,15 +7,17 @@
 
 
 .app {
-  
- height: 3000px;
- width: 1980px;
- position: relative;
+  background-size: cover;
+ height: 100%;
+ width: 100%;
+ position: absolute;
  
 margin-right: auto;
 margin-left: auto;
 background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584/chiefs-madden-image_nqzont.jpg") ;
 
+
+  
  
 }
 

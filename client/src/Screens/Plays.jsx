@@ -1,6 +1,6 @@
 
-import "./Plays.css"
-import Play from "./Play"
+import "../Assets/Plays.css"
+import Play from "../Screens/Play"
 import {useEffect} from "react"
 
 
