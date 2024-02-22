@@ -4,6 +4,8 @@ import axios from "axios";
 import "../Assets/Form.css";
 import Logo from "./Logo";
 
+
+
 function Form(props) {
   const [formation, setFormation] = useState("");
   const [team, setTeam] = useState("");
@@ -13,6 +15,7 @@ function Form(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    
     const newPlay = {
       fields: {
         team,
@@ -21,9 +24,9 @@ function Form(props) {
         type,
       },
     };
-    console.log(newPlay);
     axios.post(baseURL, newPlay, config);
     props.setToggleFetch(!props.toggleFetch);
+    console.log(newPlay);
   };
 
   return (
@@ -54,9 +57,14 @@ function Form(props) {
         value={type}
         onChange={(e) => setType(e.target.value)}
         />
-      <button className="submit-button" type="Submit">Submit</button>
-    </form>
+     <button type="submit">
+  Button
+     </button>
+          
+      {/* <button className="submit-button" type="Submit">Submit</button> */}
+      
        <Logo/>
+    </form>
         </>
   );
 }

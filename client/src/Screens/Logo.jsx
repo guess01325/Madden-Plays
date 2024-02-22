@@ -2,9 +2,9 @@
 import "../Assets/Logo.css"
 function Logo(props) {
   return (
-  <div>
+  <div className="images">
     
-        <img className="logo1"
+        <img 
           src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png"
           alt=""
         />

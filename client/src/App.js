@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import Plays from "./Screens/Plays";
-import Nav from "./Components/Nav";
 import Form from "./Screens/Form";
 import Main from "./Screens/Main";
+import Layout from "./Components/Layout";
 
 function App() {
   const [plays, setPlays] = useState([]);
@@ -25,27 +25,37 @@ function App() {
   return (
     <div>
 
-    
-      <header>
-        <Nav />
-      </header>
-      <div className="app">
-
-      <Routes>
-        <Route path="/" element={<Main />} />
-
-        <Route path="/form" element={<Form setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />}/>
+      <div className="app-background">
         
-        {/* <Images/> */}
 
-        <Route path="/plays" element={<Plays plays={plays} setToggleFetch={setToggleFetch} toggleFetch={toggleFetch}/>}/>
+     <Layout>
+        <div className="container1">
+        <Routes>
+          <Route path="/" element={<Main />} />
 
-        {/* <Images/> */}
-      </Routes>
+          <Route
+            path="/form"
+            element={
+              <Form setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
+            }
+            />
+
+
+          <Route
+            path="/plays"
+            element={
+              <Plays
+              plays={plays}
+              setToggleFetch={setToggleFetch}
+              toggleFetch={toggleFetch}
+              />
+            }
+            />
+        </Routes>
+            </div>
+            </Layout>
       </div>
     </div>
-  
-  
   );
 }
 
