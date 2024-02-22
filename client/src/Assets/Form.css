@@ -1,18 +1,19 @@
 .form-container{
-    position: flex;
-    flex-direction: column;
-    right: 1000px;
-    border: red solid;
-    width: 600px;
-    height: 525px;
-    top: 200px;
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;
-
-    /* background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630037566/maden-22-cover_osuu9f.jpg"); */
-    
+    width: 50%; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    border: 1px solid #ccc; /* Optional: Add border for visualization */
+    padding: 20px; /* Optional: Add padding for spacing */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    color: red;
   }
+
+  .form-container > * {
+    margin: 5px;
+  }
+ 
 
 
   .form-input{
@@ -27,29 +28,5 @@
   }
 
 
-  @media only screen and (max-width: 450px) {
-    .form-container{
-        position: absolute;
-        right: 850px;
-        border: red solid;
-        width: 1000px;
-        height: 1200px;
-        top: 1300px;
-        background-color: black;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-        .form-input{
-            color: blue;
-            font-size: 55PX;
-            
-        }
-          
-  .submit-button {
-    width: 100px;
-    height: 50px;
-}
-      
-    }
 

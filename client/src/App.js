@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Assets/App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
@@ -23,10 +23,12 @@ function App() {
   }, [toggleFetch]);
 
   return (
-    <div className="app">
+    <div>
+
       <header>
         <Nav />
       </header>
+    <div className="app">
 
       <Routes>
         <Route path="/" element={<Main />} />
@@ -40,6 +42,8 @@ function App() {
         {/* <Images/> */}
       </Routes>
     </div>
+  
+  </div>
   );
 }
 

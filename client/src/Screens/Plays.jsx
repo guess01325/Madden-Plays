@@ -1,7 +1,7 @@
 
 import "../Assets/Plays.css"
 import Play from "../Screens/Play"
-import Images from "./Images";
+import Logo from "./Logo";
 
 
 
@@ -11,9 +11,12 @@ function Plays(props) {
   return (
     <div className="plays-container">
       {props.plays.map((play) => (
-       <Play setToggleFetch={props.setToggleFetch}   play={play} />
+      //  <Play setToggleFetch={props.setToggleFetch}   play={play} />
       ))}
-                <Images/>
+          
+        <Logo/>
+
+      
 
     </div>
   );

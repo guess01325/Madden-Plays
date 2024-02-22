@@ -1,24 +1,23 @@
 
 .nav {
+  margin: 20px;
     display: flex;
     justify-content: space-between;
     margin-right: auto;
     margin: left;
-   
-    justify-content: space-between;
-    width: 300px;
+       width: 300px;
     font-size: x-large;
     position: absolute;
     left: 600px;
   }
 
-.link-color {
+/* .link-color {
     color: white;
-}
+} */
 
 
 
-@media only screen and (max-width: 450px) {
+/* @media only screen and (max-width: 450px) {
  
 .nav {
     display: flex;
@@ -34,7 +33,7 @@
   }
     
       
-    }
+    } */
 
  
 

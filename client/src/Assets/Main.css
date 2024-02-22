@@ -1,0 +1,74 @@
+.main {
+  width: 50%; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+  border: 1px solid #ccc; /* Optional: Add border for visualization */
+  padding: 20px; /* Optional: Add padding for spacing */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  color: red;
+}
+
+.start-link{
+  font-size: 30px;
+  color: white;
+}
+
+
+
+.main > * {
+  margin: 10px;
+}
+
+.main p{
+  font-size: 16px; /* Adjust text size as needed */
+        /* Add any other text styling as needed */
+}
+
+
+/* 
+main img{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 400px;
+  height: 800px;
+  position: absolute;
+  right: 200px;
+  flex-direction: column;
+  top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* .logos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 400px;
+    height: 800px;
+    position: absolute;
+    right: 200px;
+    flex-direction: column;
+    top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+} */ */
+
+
+
+
+  
+  
+   .madden{
+    width: 100%;
+    width: 100%;
+    margin: 20px;
+    position: relative;
+    right: 20px;
+    
+    
+  }

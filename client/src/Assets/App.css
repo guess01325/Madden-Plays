@@ -7,21 +7,18 @@
 
 
 .app {
-  background-size: cover;
- height: 100%;
- width: 100%;
- position: absolute;
- 
-margin-right: auto;
-margin-left: auto;
-background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584/chiefs-madden-image_nqzont.jpg") ;
+  background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584/chiefs-madden-image_nqzont.jpg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
 
-
-  
- 
 }
 
-.main{
+header {
+  position: relative;
+  bottom: 20px;
+}
+/* .main{
   
   color: #DC143C;
   position: relative;
@@ -30,9 +27,9 @@ background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584
   font-size: xx-large;
   word-wrap: break-word;
   width: 600px;
-}
+} */
 
-#title {
+/* #title {
   font-size: 100px;
 }
 
@@ -44,11 +41,11 @@ background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584
 #start-button {
   background-color: #DC143C;
   font-size: 40px;
-}
+} */
 
 
 
-
+/* 
   @media only screen and (max-width: 450px) {
     .app {
   
@@ -106,6 +103,6 @@ background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584
       position: absolute;
       left: 600px;
     }
-  }
+  } */
 
 
