@@ -32,7 +32,7 @@ function Form(props) {
   return (
     <>
     <form className="form-container" onSubmit={handleSubmit}>
-      <h3 className="form-input">Fill out to input your favorite Plays</h3>
+      <h2 className="form-info">Fill out the form to input your favorite Plays</h2>
       <h4 className="form-label">Team</h4>
       <input
         className="form-input"

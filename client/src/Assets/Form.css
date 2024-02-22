@@ -32,6 +32,11 @@
 
   .form-input{
     color: black;
+    font-size: x-large;
+  }
+
+  .form-info{
+    color: red;
   }
   
   .submit-button {

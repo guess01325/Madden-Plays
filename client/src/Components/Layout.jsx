@@ -12,9 +12,6 @@ export default function Layout(props) {
             <Header/>
             {props.children}
         <Footer ClassName="footer" />
-x
-
-            
         </div>
     )
 }
