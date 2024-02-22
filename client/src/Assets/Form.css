@@ -1,13 +1,17 @@
 .form-container{
-    width: 50%; /* Adjust as needed */
-    margin: 0 auto; /* Center the container */
-    border: 1px solid #ccc; /* Optional: Add border for visualization */
-    padding: 20px; /* Optional: Add padding for spacing */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text */
-    color: red;
+  height: 100%;
+  width: 25%;  
+  /* margin-top: 30px; */
+  margin-top: -350px; /* Adjust as needed */
+
+  border: 1px solid #ccc; /* Optional: Add border for visualization */
+   /* Optional: Add padding for spacing */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  color: red;
+  position: absolute;
   }
 
   .form-container > * {
@@ -17,8 +21,8 @@
 
 
   .form-input{
-      color: blue;
-      font-size: x-large;
+      color: white;
+      font-size: 20px;
       
   }
   

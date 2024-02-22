@@ -1,15 +1,17 @@
 
-.nav {
-  margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: auto;
-    margin: left;
-       width: 300px;
-    font-size: x-large;
-    position: absolute;
-    left: 600px;
-  }
+.nav { 
+  
+     display: flex; 
+     justify-content: space-between; 
+     margin: 20px; 
+       width: 300px; 
+     font-size: x-large; 
+     position: relative; 
+     left: 600px; 
+
+   } 
+
+ 
 
 /* .link-color {
     color: white;

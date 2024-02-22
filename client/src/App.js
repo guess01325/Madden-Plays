@@ -25,10 +25,11 @@ function App() {
   return (
     <div>
 
+    
       <header>
         <Nav />
       </header>
-    <div className="app">
+      <div className="app">
 
       <Routes>
         <Route path="/" element={<Main />} />
@@ -41,9 +42,10 @@ function App() {
 
         {/* <Images/> */}
       </Routes>
+      </div>
     </div>
   
-  </div>
+  
   );
 }
 

@@ -1,28 +1,24 @@
 
 .play-container  {
-    border: #DC143C solid 4px;
-    background-color: black;
-    margin: 20px;
-    padding: 20px;
-    position: relative;
-
-    display: flex;
-    width: 500px;
-    height: 400px;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: x-large;
-    
-    
-    
-
-    
-
+    height: 100%;
+    width: 25%;  
+    /* margin-top: 30px; */
+    margin-top: -350px; /* Adjust as needed */
+  
+    border: 1px solid #ccc; /* Optional: Add border for visualization */
+     /* Optional: Add padding for spacing */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    color: red;
+    position: absolute;
 }
+
 .delete-button {
     width: 100px;
     height: 50px;
+    color: white;
 }
 .play-details {
     width: 500px;

@@ -15,9 +15,9 @@ function Nav(){
             
             <div className="nav">
 
-            <Link className="link-color" to="/">Home</Link>
-            <Link className="link-color"  to="/plays" >Plays</Link>
-            <Link className="link-color" to="/form">Suggest Plays</Link>
+            <Link to="/">Home</Link>
+            <Link to="/plays" >Plays</Link>
+            <Link to="/form">Suggest Plays</Link>
             
             </div>
     

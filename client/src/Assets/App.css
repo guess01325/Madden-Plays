@@ -1,23 +1,30 @@
 
 
 
-
+html, body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584/chiefs-madden-image_nqzont.jpg");
+  /* background-color: aqua; */
+}
 
 
 
 
 .app {
-  background-image: url("https://res.cloudinary.com/otisg/image/upload/v1630033584/chiefs-madden-image_nqzont.jpg");
-  height: 100%;
-  width: 100%;
-  position: absolute;
+margin: 20px;
+
 
 }
-
+/* 
 header {
   position: relative;
   bottom: 20px;
-}
+} */
 /* .main{
   
   color: #DC143C;
