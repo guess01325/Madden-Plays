@@ -1,5 +1,6 @@
 .form-container{
-    position: absolute;
+    position: flex;
+    flex-direction: column;
     right: 1000px;
     border: red solid;
     width: 600px;
