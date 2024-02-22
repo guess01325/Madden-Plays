@@ -1,71 +1,46 @@
 import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Route, useHistory } from "react-router-dom";
-import { baseURL, config } from "./services"
+import { Routes, Route } from "react-router-dom";
+import { baseURL, config } from "./services";
 import Plays from "./Screens/Plays";
 import Nav from "./Components/Nav";
-import Images from "./Screens/Images";
-import Form from "./Screens/Form"
-
-
-
-
-
+import Form from "./Screens/Form";
+import Main from "./Screens/Main";
 
 function App() {
-  
-  const history = useHistory();
   const [plays, setPlays] = useState([]);
-  const [toggleFetch, setToggleFetch] = useState(false)
+  const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
-      const getPlays = async () => {
-        const resp = await axios.get(baseURL, config);
-        console.log(resp.data.records);
-        setPlays(resp.data.records);
-      };
-      
-      getPlays();
-    }, [toggleFetch] );
-    
-    
-    return (
-      <div className="app">
+    const getPlays = async () => {
+      const resp = await axios.get(baseURL, config);
+      console.log(resp.data.records);
+      setPlays(resp.data.records);
+    };
+
+    getPlays();
+  }, [toggleFetch]);
+
+  return (
+    <div className="app">
       <header>
         <Nav />
       </header>
 
-      <Route  path="/" exact>
-        <div className="main">
-        <h2 id="title">Own the Gridiron!</h2>
-        <p id="title-description">Popular Madden plays liver here! Add your play to the list if you think you got what it takes to own the Gridiron!</p>
-        <button id="start-button" onClick={() => history.push('/form')}>
-      Start Here
-    </button>
-          
-        </div>
-        <Images/>
+      <Routes>
+        <Route path="/" element={<Main />} />
+
+        <Route path="/form" element={<Form setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />}/>
         
-      </Route>
+        {/* <Images/> */}
 
-      <Route path="/form">
-        <Form setToggleFetch={setToggleFetch} toggleFetch={toggleFetch}/>
-        <Images/>
-      </Route>
+        <Route path="/plays" element={<Plays plays={plays} setToggleFetch={setToggleFetch} toggleFetch={toggleFetch}/>}/>
 
-
-      <Route path="/plays">
-      <Plays plays = {plays} setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
-      <Images/>
-      
-      
-      </Route>
-
-      
+        {/* <Images/> */}
+      </Routes>
     </div>
   );
-
 }
 
 export default App;

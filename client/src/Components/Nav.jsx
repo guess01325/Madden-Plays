@@ -1,4 +1,4 @@
-import {Link, Route} from "react-router-dom"
+import {Link} from "react-router-dom"
 import "../Assets/Nav.css"
 
 
@@ -11,7 +11,7 @@ function Nav(){
     return(
        
 
-        <Route>
+    
             
             <div className="nav">
 
@@ -20,7 +20,7 @@ function Nav(){
             <Link className="link-color" to="/form">Suggest Plays</Link>
             
             </div>
-        </Route>
+    
         
     )
 

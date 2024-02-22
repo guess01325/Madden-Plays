@@ -1,6 +1,7 @@
 
 import "../Assets/Plays.css"
 import Play from "../Screens/Play"
+import Images from "./Images";
 
 
 
@@ -12,6 +13,8 @@ function Plays(props) {
       {props.plays.map((play) => (
        <Play setToggleFetch={props.setToggleFetch}   play={play} />
       ))}
+                <Images/>
+
     </div>
   );
 }

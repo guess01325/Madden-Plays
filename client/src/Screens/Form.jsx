@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Images from "./Images";
 
 import { baseURL, config } from "../services";
 import axios from "axios";
@@ -27,6 +28,7 @@ function Form(props) {
   };
 
   return (
+    <>
     <form class="form-container" onSubmit={handleSubmit}>
       <h3 className="form-input">Fill out to input, your favorite Plays</h3>
       <h4 className="form-input">Team</h4>
@@ -34,27 +36,29 @@ function Form(props) {
         class="form-input"
         value={team}
         onChange={(e) => setTeam(e.target.value)}
-      />
+        />
       <h4 className="form-input">Play</h4>
       <input
         class="form-input"
         value={play}
         onChange={(e) => setPlay(e.target.value)}
-      />
+        />
       <h4 className="form-input">Formation</h4>
       <input
         class="input"
         value={formation}
         onChange={(e) => setFormation(e.target.value)}
-      />
+        />
       <h4 className="form-input">Type</h4>
       <input
         class="input"
         value={type}
         onChange={(e) => setType(e.target.value)}
-      />
+        />
       <button className="submit-button" type="Submit">Submit</button>
     </form>
+    <Images/>
+        </>
   );
 }
 
